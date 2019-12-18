@@ -19,7 +19,7 @@ get_header();
 wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
-	<main id="primary" class="site-main">
+	<main id="main" role="main" class="site-main">
 		<?php
 		if ( have_posts() ) {
 
@@ -38,7 +38,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 			get_template_part( 'template-parts/content/error' );
 		}
 		?>
-	</main><!-- #primary -->
+	</main><!-- #main -->
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();

@@ -34,11 +34,13 @@ namespace WP_Rig\WP_Rig;
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wp-rig' ); ?></a>
+	
+<header id="side-header">
+	<div class="site-branding">
+			<a class="site-logo" href="/"><img alt="Site Logo" src="/wp-content/uploads/2019/12/ReliaPost_LOGO_HORIZONTAL_COLOR_HORIZONTAL_COLOR.png"/></a>
+	</div><!-- .site-branding -->
 
-	<header id="masthead" class="site-header">
-		<?php get_template_part( 'template-parts/header/custom_header' ); ?>
+	<?php //get_template_part( 'template-parts/header/branding' ); ?>
 
-		<?php get_template_part( 'template-parts/header/branding' ); ?>
-
-		<?php get_template_part( 'template-parts/header/navigation' ); ?>
-	</header><!-- #masthead -->
+	<?php get_template_part( 'template-parts/header/navigation' ); ?>
+</header><!-- #side-header -->

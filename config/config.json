@@ -1,1 +1,14 @@
-{}
+{
+  "theme": {
+    "slug": "reliapost-theme",
+    "name": "ReliaPost Theme",
+    "author": "Art Unlimited"
+  },
+  "dev": {
+    "browserSync": {
+      "live": true,
+	    "proxyURL": "http://reliapost.wordpress.test/",
+	    "bypassPort": "8181"
+	}
+  }
+}

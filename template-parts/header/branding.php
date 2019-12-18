@@ -10,28 +10,5 @@ namespace WP_Rig\WP_Rig;
 ?>
 
 <div class="site-branding">
-	<?php the_custom_logo(); ?>
-
-	<?php
-	if ( is_front_page() && is_home() ) {
-		?>
-		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-		<?php
-	} else {
-		?>
-		<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-		<?php
-	}
-	?>
-
-	<?php
-	$wp_rig_description = get_bloginfo( 'description', 'display' );
-	if ( $wp_rig_description || is_customize_preview() ) {
-		?>
-		<p class="site-description">
-			<?php echo $wp_rig_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?>
-		</p>
-		<?php
-	}
-	?>
+		<a class="site-logo" href="/"><img alt="Site Logo" src="/wp-content/uploads/2019/12/ReliaPost_LOGO_HORIZONTAL_COLOR_HORIZONTAL_COLOR.png"/></a>
 </div><!-- .site-branding -->
