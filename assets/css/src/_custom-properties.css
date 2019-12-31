@@ -5,12 +5,13 @@
  * @link: https://developer.mozilla.org/en-US/docs/Web/CSS/--*
  **/
 
+ @import url('https://fonts.googleapis.com/css?family=Muli');
 :root {
-	--global-font-color: white;
-	--global-font-family: "Crimson Text", serif;
+	--global-font-color: #1c2833;
+	--global-font-family: 'Muli', sans-serif;
 	--global-font-size: 20;
 	--global-font-line-height: 1.4;
-	--highlight-font-family: "Roboto Condensed", "Helvetica Neue", "Arial Narrow", sans-serif;
+	--highlight-font-family: 'Muli', sans-serif;
 	--content-width: 45rem;
 	--dropdown-symbol-width: 0.7em;
 
@@ -27,8 +28,8 @@
 	--color-custom-daylight: #97c0b7;
 	--color-custom-sun: #eee9d1;
 
-	--color-link: #0073aa;
-	--color-link-visited: #333;
+	--color-link: #f7b429;
+	--color-link-visited: #00a0d2;
 	--color-link-active: #00a0d2;
 
 	--color-quote-border: #000;

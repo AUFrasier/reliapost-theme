@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
 body {
+    color: var(--color-theme-white);
     background-color: #0D3151;
     width: 100%;
     height: 100%;
@@ -9,16 +11,12 @@ body {
     height: 100%;
     top: 0;
 }
-#main {
-    position: absolute;
-}
-
 #side-header {
     left: 0;
     top: 0;
     width: 280px;
     position: absolute;
-    background-image: url(/wp-content/uploads/2019/12/sidebar-scaled.jpg);
+    background-image: url(/wp-content/uploads/2019/12/sidebar.jpg);
     background-repeat: no-repeat;
     background-position: 100% 45%;
     position: fixed;
@@ -28,11 +26,8 @@ body {
 #content {
     margin: 0 auto;
     width: 90%;
-    margin-top: 55px;
-    margin-bottom: 55px;
-    padding: 55px;
 }
-@media (--mobile-device-tablet) {
+@media (--mobile-device-max) {
     #side-header {
         width: 100%;
         height: auto;
@@ -61,6 +56,7 @@ body {
 .site-main{
     margin-left: 280px;
     height: auto;
+    padding: 40px;
 }
 .site-main, .site-footer {
     margin-left: 280px;
@@ -74,4 +70,34 @@ body {
 .menu-item {
     background-color:#0d3151;
     margin-bottom: 3px;
+}
+.page-wrapper {
+    padding: 30px;
+}
+.post-content {
+    margin-top: 45px;
+}
+
+.post-grid {
+    display: inline-flex;
+    width: 100%;
+}
+.post-card {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    margin: 15px;
+    background-color: white;
+    padding: 20px;
+}
+
+.trimmed-content {
+    color: #0D3151;
+    font-family: 'Muli', sans-serif;
+}
+
+.home-content .text-card p {
+    text-align: center;
+    font-size: 22px;
+    margin: 10px;
 }

@@ -15,7 +15,3 @@ namespace WP_Rig\WP_Rig;
         <?php the_content(); ?>
    </article><!-- #post-<?php the_ID(); ?> -->
 </section>
-
-<script>
-    jQuery( ".page-wrapper" ).appendTo(jQuery( "#content #post-<?php the_ID(); ?>" ));
-</script>

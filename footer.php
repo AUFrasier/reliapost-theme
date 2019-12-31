@@ -12,13 +12,14 @@
 namespace WP_Rig\WP_Rig;
 
 ?>
-
+</main><!-- #main -->
 	<footer id="colophon" class="site-footer">
-		<?php get_template_part( 'template-parts/footer/info' ); ?>
-	</footer><!-- #colophon -->
+		<?php //get_template_part( 'template-parts/footer/info' ); ?>
+	</footer><!-- .site-footer -->
 </div><!-- #page -->
-
-<?php wp_footer(); ?>
-
+<script>
+    jQuery( ".page-wrapper" ).appendTo(jQuery( "#content" ));
+</script>
+<?php wp_footer() ?>
 </body>
 </html>

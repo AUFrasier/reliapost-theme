@@ -28,6 +28,7 @@ namespace WP_Rig\WP_Rig;
 	?>
 
 	<?php wp_head(); ?>
+	<script src="https://kit.fontawesome.com/8ad5d35c6d.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -44,3 +45,4 @@ namespace WP_Rig\WP_Rig;
 
 	<?php get_template_part( 'template-parts/header/navigation' ); ?>
 </header><!-- #side-header -->
+<main id="main" role="main" class="site-main">
