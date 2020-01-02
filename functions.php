@@ -64,3 +64,23 @@ require get_template_directory() . '/inc/functions.php';
 
 // Initialize the theme.
 call_user_func( 'WP_Rig\WP_Rig\wp_rig' );
+
+add_role(
+	'brand-user',
+	__( 'Brand User' ),
+	array(
+		'read'         => true,  // true allows this capability
+        'edit_posts'   => true,
+        'delete_posts' => true, // Use false to explicitly deny
+	)
+);
+
+add_role(
+	'business-user',
+	__( 'Business User' ),
+	array(
+		'read'         => true,  // true allows this capability
+        'edit_posts'   => false,
+        'delete_posts' => false, // Use false to explicitly deny
+	)
+);
